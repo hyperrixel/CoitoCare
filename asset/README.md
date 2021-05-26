@@ -1,0 +1,3 @@
+# CoitoCare
+
+Assets location.
