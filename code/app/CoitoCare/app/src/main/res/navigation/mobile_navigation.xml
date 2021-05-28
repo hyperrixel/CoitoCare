@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/fragment_main">
+
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.fishque.coitocare.MainFragment"
+        tools:layout="@layout/fragment_main"/>
+
+    <fragment
+        android:id="@+id/fragment_disease"
+        android:name="com.fishque.coitocare.DiseaseFragment"
+        tools:layout="@layout/fragment_disease"/>
+
+    <fragment
+        android:id="@+id/fragment_history"
+        android:name="com.fishque.coitocare.HistoryFragment"
+        tools:layout="@layout/fragment_history"/>
+
+    <fragment
+        android:id="@+id/fragment_profile"
+        android:name="com.fishque.coitocare.ProfileFragment"
+        tools:layout="@layout/fragment_profile"/>
+
+    <fragment
+        android:id="@+id/fragment_settings"
+        android:name="com.fishque.coitocare.SettingsFragment"
+        tools:layout="@layout/fragment_settings"/>
+
+    <fragment
+        android:id="@+id/fragment_ask"
+        android:name="com.fishque.coitocare.AskFragment"
+        tools:layout="@layout/fragment_ask"/>
+
+    <fragment
+        android:id="@+id/fragment_howto"
+        android:name="com.fishque.coitocare.HowtoFragment"
+        tools:layout="@layout/fragment_howto"/>
+
+    <fragment
+        android:id="@+id/fragment_legal"
+        android:name="com.fishque.coitocare.LegalFragment"
+        tools:layout="@layout/fragment_legal"/>
+
+    <fragment
+        android:id="@+id/fragment_about"
+        android:name="com.fishque.coitocare.AboutFragment"
+        tools:layout="@layout/fragment_about"/>
+
+    <fragment
+        android:id="@+id/fragment_feedback"
+        android:name="com.fishque.coitocare.FeedbackFragment"
+        tools:layout="@layout/fragment_feedback"/>
+
+</navigation>

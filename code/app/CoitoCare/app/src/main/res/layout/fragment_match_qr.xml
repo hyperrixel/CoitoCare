@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/fragment_margin"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/default_elevation"
+    android:clipToPadding="false"
+    tools:context=".MatchQrFragment">
+
+    <ImageView
+        android:id="@+id/event_qr_code"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:contentDescription="@string/match_qr_description" />
+
+    <Button
+        android:id="@+id/match_add"
+        android:elevation="@dimen/default_elevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/default_margin_vertical"
+        android:text="@string/match_qr_add"/>
+
+    <TextView
+        android:id="@+id/partner_count"
+        android:background="@color/white"
+        android:elevation="@dimen/default_elevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/default_margin_vertical"
+        android:textAlignment="center"
+        android:text="@string/match_qr_no_partner"
+        android:padding="@dimen/default_inner_padding"/>
+
+    <Button
+        android:id="@+id/match_done"
+        android:elevation="@dimen/default_elevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/default_margin_vertical"
+        android:text="@string/match_qr_done"/>
+
+</LinearLayout>

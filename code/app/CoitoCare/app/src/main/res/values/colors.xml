@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="coito_red_500">#d40000</color>
+    <color name="coito_red_900">#b90000</color>
+    <color name="coito_red_300">#e14d4d</color>
+    <color name="coito_orange_500">#ff5030</color>
+    <color name="coito_orange_900">#ff2713</color>
+    <color name="coito_orange_300">#ff856e</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_e0">#e0e0e0</color>
+    <color name="gray_f0">#f0f0f0</color>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/menu_health_nest"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/fragment_disease"
+            android:icon="@drawable/ic_health_state_foreground"
+            android:title="@string/menu_nd_health_state" />
+    </group>
+    <group
+        android:id="@+id/menu_history_nest"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/fragment_history"
+            android:icon="@drawable/ic_history_foreground"
+            android:title="@string/menu_nd_history" />
+    </group>
+    <group
+        android:id="@+id/menu_setup_nest"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/fragment_profile"
+            android:icon="@drawable/ic_profile_foreground"
+            android:title="@string/menu_nd_profile" />
+        <item
+            android:id="@+id/fragment_settings"
+            android:icon="@drawable/ic_settings_foreground"
+            android:title="@string/menu_nd_settings" />
+    </group>
+    <group
+        android:id="@+id/menu_ask_nest"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/fragment_ask"
+            android:icon="@drawable/ic_ask_foreground"
+            android:title="@string/menu_nd_ask" />
+    </group>
+    <group
+        android:id="@+id/menu_info_nest"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/fragment_howto"
+            android:icon="@drawable/ic_how_to_foreground"
+            android:title="@string/menu_nd_howto" />
+        <item
+            android:id="@+id/fragment_legal"
+            android:icon="@drawable/ic_legal_foreground"
+            android:title="@string/menu_nd_legal" />
+        <item
+            android:id="@+id/fragment_about"
+            android:icon="@drawable/ic_about_foreground"
+            android:title="@string/menu_nd_about" />
+    </group>
+    <group
+        android:id="@+id/menu_feedback_nest"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/fragment_feedback"
+            android:icon="@drawable/ic_feedback_foreground"
+            android:title="@string/menu_nd_feedback" />
+    </group>
+</menu>

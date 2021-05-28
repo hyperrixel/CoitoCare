@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/fragment_margin"
+    android:orientation="vertical"
+    android:padding="@dimen/default_elevation"
+    android:clipToPadding="false"
+    tools:context=".HistoryFragment">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:elevation="@dimen/default_elevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/default_margin_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_inner_padding">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:elevation="@dimen/default_elevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/default_margin_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_inner_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginBottom="@dimen/default_margin_vertical"
+                android:textStyle="bold"
+                android:text="@string/history_stats"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:textStyle="bold"
+                    android:text="@string/history_stats_partners"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:textAlignment="viewEnd"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:textStyle="bold"
+                    android:text="@string/history_stats_matches"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:textAlignment="viewEnd"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:textStyle="bold"
+                    android:text="@string/history_stats_protections"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:textAlignment="viewEnd"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

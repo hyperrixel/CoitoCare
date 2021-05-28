@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/fragment_margin"
+    android:padding="@dimen/default_elevation"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    tools:context=".DiseaseFragment">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:elevation="@dimen/default_elevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_inner_padding">
+
+        <TextView
+            android:gravity="start|center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="@string/disease_type"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/disease_disease_spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:entries="@array/disease_types" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/disease_state_text"
+        android:background="@color/white"
+        android:elevation="@dimen/default_elevation"
+        android:gravity="start|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/default_margin_vertical"
+        android:padding="@dimen/default_inner_padding"
+        android:text="@string/disease_type"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:elevation="@dimen/default_elevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/default_margin_vertical"
+        android:text="@string/disease_set"/>
+
+</LinearLayout>

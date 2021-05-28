@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/fragment_margin"
+    android:orientation="vertical"
+    android:padding="@dimen/default_elevation"
+    android:clipToPadding="false"
+    tools:context=".SettingsFragment">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:elevation="@dimen/default_elevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/default_margin_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_inner_padding">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/settings_live_switch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/settings_live" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:elevation="@dimen/default_elevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/default_margin_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_inner_padding">
+
+        <TextView
+            android:gravity="start|center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="@string/settings_connect"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/settings_connect_spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:entries="@array/settings_connect_on" />
+
+    </LinearLayout>
+
+</LinearLayout>

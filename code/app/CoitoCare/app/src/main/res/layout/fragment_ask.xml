@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/fragment_margin"
+    android:orientation="vertical"
+    android:padding="@dimen/default_elevation"
+    android:clipToPadding="false"
+    tools:context=".AskFragment">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:elevation="@dimen/default_elevation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_marginVertical="@dimen/default_margin_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_inner_padding">
+
+        <TextView
+            android:gravity="end|center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="@string/general_location" />
+
+        <Spinner
+            android:id="@+id/ask_location_spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:entries="@array/general_locations" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:elevation="@dimen/default_elevation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_marginVertical="@dimen/default_margin_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_inner_padding">
+
+        <TextView
+            android:gravity="end|center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="@string/ask_entity_type" />
+
+        <Spinner
+            android:id="@+id/ask_entity_spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:entries="@array/ask_entity_types" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ask_entities"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"/>
+
+</LinearLayout>

@@ -1,0 +1,374 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Application Basics -->
+    <string name="app_name">CoitoCare</string>
+
+    <!-- AskActivity -->
+    <string name="ask_entity_type">Entity type</string>
+    <string-array name="ask_entity_types">
+        <item>Aid organizations</item>
+        <item>Healthcare entities</item>
+    </string-array>
+
+    <!-- DiseaseFragment -->
+    <string name="disease_no">I don\'t have disease.</string>
+    <string name="disease_type">Disease type</string>
+    <string name="disease_yes">I have %s!</string>
+    <string-array name="disease_types">
+        <item>HIV</item>
+        <item>Chancroid</item>
+        <item>Chlamydia</item>
+        <item>Genital Herpes</item>
+        <item>Gonorrhea</item>
+        <item>Hepatitis</item>
+        <item>HPV</item>
+        <item>Marburg virus</item>
+        <item>Syphilis</item>
+    </string-array>
+    <string name="disease_set">Set disease</string>
+
+    <!-- FirstTimeActivity -->
+
+    <!-- General -->
+    <string name="general_default_nick">Unnamed</string>
+    <string name="general_disease_no">I don\'t have sexually transmittable disease.</string>
+    <string name="general_disease_yes">I sexually transmittable have disease.</string>
+    <string name="general_location">Location</string>
+    <string-array name="general_locations">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahamas</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>Botswana</item>
+        <item>Brazil</item>
+        <item>Brunei</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Côte d\'Ivoire</item>
+        <item>Cabo Verde</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Central African Republic</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>Congo, Democratic Republic of the</item>
+        <item>Congo, Republic of the</item>
+        <item>Costa Rica</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominica</item>
+        <item>Dominican Republic</item>
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>El Salvador</item>
+        <item>Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Eswatini</item>
+        <item>Ethiopia</item>
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>Gabon</item>
+        <item>Gambia</item>
+        <item>Georgia</item>
+        <item>Germany</item>
+        <item>Ghana</item>
+        <item>Greece</item>
+        <item>Grenada</item>
+        <item>Guatemala</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Guyana</item>
+        <item>Haiti</item>
+        <item>Holy See</item>
+        <item>Honduras</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Ireland</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jordan</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>Kuwait</item>
+        <item>Kyrgyzstan</item>
+        <item>Laos</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marshall Islands</item>
+        <item>Mauritania</item>
+        <item>Mauritius</item>
+        <item>Mexico</item>
+        <item>Micronesia</item>
+        <item>Moldova</item>
+        <item>Monaco</item>
+        <item>Mongolia</item>
+        <item>Montenegro</item>
+        <item>Morocco</item>
+        <item>Mozambique</item>
+        <item>Myanmar</item>
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>New Zealand</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>North Korea</item>
+        <item>North Macedonia</item>
+        <item>Norway</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Panama</item>
+        <item>Papua New Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Qatar</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Rwanda</item>
+        <item>Saint Kitts and Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint Vincent and the Grenadines</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>Sao Tome and Principe</item>
+        <item>Saudi Arabia</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapore</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Solomon Islands</item>
+        <item>Somalia</item>
+        <item>South Africa</item>
+        <item>South Korea</item>
+        <item>South Sudan</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>Sudan</item>
+        <item>Suriname</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Syria</item>
+        <item>Tajikistan</item>
+        <item>Tanzania</item>
+        <item>Thailand</item>
+        <item>Timor-Leste</item>
+        <item>Togo</item>
+        <item>Tonga</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turkmenistan</item>
+        <item>Tuvalu</item>
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>United States of America</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        <item>Yemen</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+    </string-array>
+    <string name="general_no">No</string>
+    <string name="general_placeholder_message">Write a message.</string>
+    <string name="general_placeholder_subject">Give a subject.</string>
+    <string name="general_profile_picture">Profile picture</string>
+    <string name="general_send">Send</string>
+    <string name="general_yes">Yes</string>
+
+    <!-- HistoryFragment -->
+    <string name="history_stats">Stats</string>
+    <string name="history_stats_matches">Number of matches</string>
+    <string name="history_stats_partners">Number of partners</string>
+    <string name="history_stats_protections">Number of protections</string>
+
+    <!-- Information Texts -->
+    <string name="info_about">
+        About
+    </string>
+    <string name="info_howto">
+        How to use the application
+    </string>
+    <string name="info_legal">
+        Legal notices
+    </string>
+
+    <!-- MainActivity -->
+
+    <!-- MakeMatchActivity -->
+
+    <!-- MatchMainFragment -->
+    <string name="match_main_make">Make match</string>
+    <string name="match_main_protection">I use protection</string>
+    <string name="match_main_protection_condom">Condom</string>
+    <string name="match_main_protection_no">
+        No, I\'m not protected against sexually transmittable diseases.
+    </string>
+    <string name="match_main_protection_label">Protection type</string>
+    <string name="match_main_protection_pep">PEP (Post-Exposure Prophylaxis)</string>
+    <string name="match_main_protection_prep">PrEP (Pre-Exposure Prophylaxis)</string>
+    <string name="match_main_protection_yes">
+        Yes, I\'m protected against sexually transmittable diseases.
+    </string>
+    <string name="match_main_title">Add match event</string>
+
+    <!-- MatchQrFragment -->
+    <string name="match_qr_add">Add partner</string>
+    <string name="match_qr_description">Generated QR code</string>
+    <string name="match_qr_done">Done</string>
+    <string name="match_qr_no_partner">No partner added yet.</string>
+    <string name="match_qr_partner_count">%d partner added yet.</string>
+
+    <!-- MatchScanFragment -->
+    <string name="match_scan_btn">Scan QR code</string>
+
+    <!-- Navigation Drawer -->
+    <string name="nd_photo">Profile picture</string>
+
+    <!-- Navigation Drawer - menu items -->
+    <string name="menu_nd_about">About</string>
+    <string name="menu_nd_ask">Ask for help</string>
+    <string name="menu_nd_feedback">Feedback</string>
+    <string name="menu_nd_health_state">Health state</string>
+    <string name="menu_nd_history">History</string>
+    <string name="menu_nd_howto">App how to</string>
+    <string name="menu_nd_legal">Legal</string>
+    <string name="menu_nd_profile">Profile</string>
+    <string name="menu_nd_settings">App settings</string>
+
+    <!-- ProfileFragment -->
+    <string name="profile_disease">Review diseases</string>
+    <string name="profile_gender">Gender</string>
+    <string-array name="profile_genders">
+        <item>Prefer not to say</item>
+        <item>Man</item>
+        <item>Woman</item>
+        <item>Cis Man</item>
+        <item>Cis Woman</item>
+        <item>Trans Man</item>
+        <item>Trans Woman</item>
+        <item>Agender</item>
+        <item>Androgynous</item>
+        <item>Bigender</item>
+        <item>Gender</item>
+        <item>Genderfluid</item>
+        <item>Genderqueer</item>
+        <item>Hijra</item>
+        <item>Intersex</item>
+        <item>Non-binary</item>
+        <item>Nonconforming</item>
+        <item>Other</item>
+        <item>Pangender</item>
+        <item>Third Gender</item>
+        <item>Transfeminine</item>
+        <item>Transgender</item>
+        <item>Transmasculine</item>
+        <item>Transsexual</item>
+        <item>Two Spirit</item>
+    </string-array>
+    <string name="profile_nick">Nickname</string>
+    <string name="profile_nick_placeholder">Add a nickname</string>
+    <string name="profile_orientation">Sexual orientation</string>
+    <string-array name="profile_orientations">
+        <item>Prefer not to say</item>
+        <item>Straight</item>
+        <item>Gay</item>
+        <item>Asexual</item>
+        <item>Androsexual</item>
+        <item>Bisexual</item>
+        <item>Demisexual</item>
+        <item>Fluid</item>
+        <item>Gynesexual</item>
+        <item>Graysexual</item>
+        <item>Heteroflexible</item>
+        <item>Homoflexible</item>
+        <item>Lesbian</item>
+        <item>Pansexual</item>
+        <item>Polysexual</item>
+        <item>Pomosexual</item>
+        <item>Queer</item>
+        <item>Questioning</item>
+        <item>Reciprosexual</item>
+        <item>Skoliosexual</item>
+    </string-array>
+
+    <!-- SettingsFragment -->
+    <string name="settings_connect">Connect</string>
+    <string-array name="settings_connect_on">
+        <item>WiFi only</item>
+        <item>Mobilenet only</item>
+        <item>All</item>
+    </string-array>
+    <string name="settings_live">Live connection</string>
+    <string name="title_activity_qr">QrActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

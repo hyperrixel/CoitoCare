@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/fragment_margin"
+    android:orientation="vertical"
+    android:padding="@dimen/default_elevation"
+    android:clipToPadding="false"
+    tools:context=".ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageButton
+            android:backgroundTint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/general_profile_picture"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:elevation="@dimen/default_elevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/default_margin_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_inner_padding">
+
+        <TextView
+            android:gravity="start|center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="@string/settings_connect"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:background="@color/white"
+            android:elevation="@dimen/default_elevation"
+            android:hint="@string/profile_nick_placeholder"
+            android:inputType="textEmailSubject"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:autofillHints=""
+            android:layout_marginVertical="@dimen/default_margin_vertical"
+            android:padding="@dimen/default_inner_padding"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:elevation="@dimen/default_elevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/default_margin_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_inner_padding">
+
+        <TextView
+            android:gravity="start|center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="@string/profile_gender"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/profile_gender_spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:entries="@array/profile_genders" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:elevation="@dimen/default_elevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/default_margin_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_inner_padding">
+
+        <TextView
+            android:gravity="start|center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="@string/profile_orientation"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/profile_orientation_spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:entries="@array/profile_orientations" />
+
+    </LinearLayout>
+
+    <Button
+        android:elevation="@dimen/default_elevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/default_margin_vertical"
+        android:text="@string/profile_disease"/>
+
+</LinearLayout>
