@@ -1,0 +1,22 @@
+# Development plan
+
+- [X] create app, server workflow
+- [X] create app and server (proof of concept level)
+- [X] write documentation and make presentation
+- [X] create rules for rule-based warnings
+- [X] basic data research for AI models
+- [ ] refactor app to fit the top most requirements
+- [ ] refactor rules for rule-based warnings
+- [ ] create basic AI models for prediction
+- [ ] alpha testing
+- [ ] make iOs version
+- [ ] refactor app, server for the highest security level
+- [ ] beta testing
+- [ ] publish applications
+- [ ] cooperation with pharmaceutical companies
+- [ ] advanced data research for AI models
+- [ ] add new diseases
+- [ ] cooperation with LGBTQ communities
+- [ ] rework categories: gender and sexual identity
+- [ ] add new feature: register group events
+- [ ] add new feature: third party certification
