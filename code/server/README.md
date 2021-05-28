@@ -1,0 +1,3 @@
+# CoitoCare
+
+Server files location.
