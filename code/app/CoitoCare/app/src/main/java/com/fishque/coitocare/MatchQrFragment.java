@@ -1,3 +1,19 @@
+/**
+ * CoitoCare
+ * =========
+ * Complete solution for sexually active people to provide safety from
+ * sexually transmitted disease or infection.
+ *
+ * @author     Axel Ország-Krisz Dr.
+ * @author     Richárd Ádám Vécsey Dr.
+ *
+ * @copyright  (c) 2021 by Axel Ország-Krisz Dr. and Richárd Ádám Vécsey Dr.
+ * @copyright  All rights reserved.
+ * @copyright  ATTENTION: This code is not open source.
+ *
+ * This file contains MatchQrFragment class code.
+ */
+
 package com.fishque.coitocare;
 
 import android.content.Intent;
@@ -19,6 +35,10 @@ import com.google.zxing.WriterException;
 import androidmads.library.qrgenearator.QRGContents;
 import androidmads.library.qrgenearator.QRGEncoder;
 
+/**
+ * Provide QR code generator and match registration screen
+ * =======================================================
+ */
 public class MatchQrFragment extends Fragment {
 
     private Bundle mBundle;
@@ -29,16 +49,36 @@ public class MatchQrFragment extends Fragment {
     TextView tvPartnerCount;
     Button btnDone;
 
+    /**
+     * Construct object instance
+     * -------------------------
+     */
     public MatchQrFragment() {
         // Required empty public constructor
     }
 
+    /**
+     * Create a new instance
+     * ---------------------
+     *
+     * @param   Bundle bundle
+     *          Instance information.
+     * @return  MatchQrFragment
+     *          The created new instance.
+     */
     public static MatchQrFragment newInstance(Bundle bundle) {
         MatchQrFragment fragment = new MatchQrFragment();
         fragment.setArguments(bundle);
         return fragment;
     }
 
+    /**
+     * Handle creation of the object
+     * -----------------------------
+     *
+     * @param   Bundle savedInstanceState
+     *          Instance information.
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +88,20 @@ public class MatchQrFragment extends Fragment {
         }
     }
 
+    /**
+     * Handle the creation of the fragment's view
+     * ------------------------------------------
+     *
+     * @param   LayoutInflater inflater
+     *          The inflater to use to inflate the layout.
+     * @param   ViewGroup container
+     *          The container to inflate the boject to.
+     * @param   Bundle savedInstanceState
+     *          Instance information.
+     *
+     * @return  View
+     *          The created view.
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -64,7 +118,8 @@ public class MatchQrFragment extends Fragment {
         }
         eventId = CoitoTools.generateEventCode();
         eventCodeString = CoitoConsts.getQrHeader() + eventId;
-        QRGEncoder encoder = new QRGEncoder(eventCodeString, null, QRGContents.Type.TEXT, 1000);
+        QRGEncoder encoder = new QRGEncoder(eventCodeString, null,
+                QRGContents.Type.TEXT, 1000);
         tvPartnerCount = root.findViewById(R.id.partner_count);
         btnDone = root.findViewById(R.id.match_done);
         btnDone.setOnClickListener(new View.OnClickListener() {
@@ -99,17 +154,9 @@ public class MatchQrFragment extends Fragment {
 
                 getParentFragmentManager().beginTransaction()
                         .setReorderingAllowed(true)
-                        .replace(R.id.match_fragment_container, MatchScanFragment.newInstance(mBundle), null)
+                        .replace(R.id.match_fragment_container,
+                                MatchScanFragment.newInstance(mBundle), null)
                         .commitNow();
-
-                // https://developer.android.com/training/camerax/analyze
-                // https://developers.google.com/ml-kit/vision/barcode-scanning/android
-                // https://github.com/zendroidhd/camerax-barcode-scanner/tree/development/app/src/main/java/com/technology/zenlight/barcodescanner
-                // https://www.youtube.com/watch?v=i46VlSinoko
-
-                // https://github.com/akhilbattula/android-camerax-java
-
-                // https://developer.android.com/training/camerax
 
             }
         });
@@ -118,6 +165,10 @@ public class MatchQrFragment extends Fragment {
 
     }
 
+    /**
+     * Perform the update of the view
+     * ------------------------------
+     */
     void updateView() {
 
         if (CoitoConsts.counter == 0) {
@@ -134,4 +185,5 @@ public class MatchQrFragment extends Fragment {
         }
 
     }
+
 }

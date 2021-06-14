@@ -1,3 +1,19 @@
+/**
+ * CoitoCare
+ * =========
+ * Complete solution for sexually active people to provide safety from
+ * sexually transmitted disease or infection.
+ *
+ * @author     Axel Ország-Krisz Dr.
+ * @author     Richárd Ádám Vécsey Dr.
+ *
+ * @copyright  (c) 2021 by Axel Ország-Krisz Dr. and Richárd Ádám Vécsey Dr.
+ * @copyright  All rights reserved.
+ * @copyright  ATTENTION: This code is not open source.
+ *
+ * This file contains LegalFragment class code.
+ */
+
 package com.fishque.coitocare;
 
 import android.os.Bundle;
@@ -9,56 +25,67 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * A simple {@link Fragment} subclass.
- * Use the {@link LegalFragment#newInstance} factory method to
- * create an instance of this fragment.
+ * Provide legal information screen
+ * ================================
  */
 public class LegalFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
+    /**
+     * Construct object instance
+     * -------------------------
+     */
     public LegalFragment() {
         // Required empty public constructor
     }
 
     /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
+     * Create a new instance
+     * ---------------------
      *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment LegalFragment.
+     * @return  LegalFragment
+     *          The created new instance.
      */
-    // TODO: Rename and change types and number of parameters
-    public static LegalFragment newInstance(String param1, String param2) {
-        LegalFragment fragment = new LegalFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
+    public static LegalFragment newInstance() {
+
+        return new LegalFragment();
+
     }
 
+    /**
+     * Handle creation of the object
+     * -----------------------------
+     *
+     * @param   Bundle savedInstanceState
+     *          Instance information.
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
     }
 
+    /**
+     * Handle the creation of the fragment's view
+     * ------------------------------------------
+     *
+     * @param   LayoutInflater inflater
+     *          The inflater to use to inflate the layout.
+     * @param   ViewGroup container
+     *          The container to inflate the boject to.
+     * @param   Bundle savedInstanceState
+     *          Instance information.
+     *
+     * @return  View
+     *          The created view.
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_legal, container, false);
+
     }
+
 }

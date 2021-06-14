@@ -1,3 +1,19 @@
+/**
+ * CoitoCare
+ * =========
+ * Complete solution for sexually active people to provide safety from
+ * sexually transmitted disease or infection.
+ *
+ * @author     Axel Ország-Krisz Dr.
+ * @author     Richárd Ádám Vécsey Dr.
+ *
+ * @copyright  (c) 2021 by Axel Ország-Krisz Dr. and Richárd Ádám Vécsey Dr.
+ * @copyright  All rights reserved.
+ * @copyright  ATTENTION: This code is not open source.
+ *
+ * This file contains MatchScanFragment class code.
+ */
+
 package com.fishque.coitocare;
 
 import android.annotation.SuppressLint;
@@ -43,6 +59,10 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
+/**
+ * Provide screen to scan and process QR codes
+ * ===========================================
+ */
 public class MatchScanFragment extends Fragment {
 
     private Bundle mBundle;
@@ -52,10 +72,25 @@ public class MatchScanFragment extends Fragment {
     PreviewView mPreviewView;
     Button mButton;
 
+    /**
+     * Construct object instance
+     * -------------------------
+     */
     public MatchScanFragment() {
+
         // Required empty public constructor
+
     }
 
+    /**
+     * Create a new instance
+     * ---------------------
+     *
+     * @param   Bundle bundle
+     *          Instance information.
+     * @return  MatchScanFragment
+     *          The created new instance.
+     */
     public static MatchScanFragment newInstance(Bundle bundle) {
 
         MatchScanFragment fragment = new MatchScanFragment();
@@ -64,6 +99,13 @@ public class MatchScanFragment extends Fragment {
 
     }
 
+    /**
+     * Handle creation of the object
+     * -----------------------------
+     *
+     * @param   Bundle savedInstanceState
+     *          Instance information.
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
@@ -71,6 +113,20 @@ public class MatchScanFragment extends Fragment {
 
     }
 
+    /**
+     * Handle the creation of the fragment's view
+     * ------------------------------------------
+     *
+     * @param   LayoutInflater inflater
+     *          The inflater to use to inflate the layout.
+     * @param   ViewGroup container
+     *          The container to inflate the boject to.
+     * @param   Bundle savedInstanceState
+     *          Instance information.
+     *
+     * @return  View
+     *          The created view.
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -89,8 +145,8 @@ public class MatchScanFragment extends Fragment {
             if (getActivity() != null) {
 
                 ActivityCompat.requestPermissions(getActivity(),
-                        CoitoConsts.ANDROID_REQUIRED_PERMISSIONS,
-                        CoitoConsts.ANDROID_REQUEST_CODE_PERMISSION);
+                        CoitoConsts.QR_SCAN_REQUIRED_PERMISSIONS,
+                        CoitoConsts.QR_REQUEST_CODE_PERMISSION);
 
             }
 
@@ -100,9 +156,16 @@ public class MatchScanFragment extends Fragment {
 
     }
 
+    /**
+     * Check whether permissions are granted or not
+     * --------------------------------------------
+     *
+     * @return  boolean
+     *          True if permission is granted, false if not.
+     */
     private boolean arePermissionsGranted() {
 
-        for (String permission : CoitoConsts.ANDROID_REQUIRED_PERMISSIONS) {
+        for (String permission : CoitoConsts.QR_SCAN_REQUIRED_PERMISSIONS) {
 
             if (getContext() != null) {
 
@@ -121,6 +184,13 @@ public class MatchScanFragment extends Fragment {
 
     }
 
+    /**
+     * Bind camera view
+     * ----------------
+     *
+     * @param   ProcessCameraProvider provider
+     *          Provider to process the pictures of the camera.
+     */
     private void bindView(@NonNull ProcessCameraProvider provider) {
 
         if (getActivity() != null) {
@@ -132,7 +202,8 @@ public class MatchScanFragment extends Fragment {
             ImageAnalysis imageAnalysis = new ImageAnalysis.Builder().build();
             ImageCapture.Builder builder = new ImageCapture.Builder();
             final ImageCapture imageCapture = builder
-                    .setTargetRotation(getActivity().getWindowManager().getDefaultDisplay().getRotation())
+                    .setTargetRotation(getActivity().getWindowManager()
+                            .getDefaultDisplay().getRotation())
                     .build();
 
             preview.setSurfaceProvider(mPreviewView.getSurfaceProvider());
@@ -182,8 +253,10 @@ public class MatchScanFragment extends Fragment {
 
                                                             if (mBundle != null) {
 
-                                                                if (mBundle.containsKey(CoitoConsts.KEY_NEW_PARTNER_COUNT)) {
-                                                                    count = mBundle.getInt(CoitoConsts.KEY_NEW_PARTNER_COUNT);
+                                                                if (mBundle.containsKey(CoitoConsts
+                                                                        .KEY_NEW_PARTNER_COUNT)) {
+                                                                    count = mBundle.getInt(CoitoConsts
+                                                                            .KEY_NEW_PARTNER_COUNT);
                                                                 }
 
                                                             } else {
@@ -191,11 +264,13 @@ public class MatchScanFragment extends Fragment {
                                                                 mBundle = new Bundle();
 
                                                             }
-                                                            mBundle.putInt(CoitoConsts.KEY_NEW_PARTNER_COUNT, count);
+                                                            mBundle.putInt(CoitoConsts
+                                                                    .KEY_NEW_PARTNER_COUNT, count);
                                                             count += 1;
                                                             getParentFragmentManager().beginTransaction()
                                                                     .setReorderingAllowed(true)
-                                                                    .replace(R.id.match_fragment_container, MatchQrFragment.newInstance(mBundle))
+                                                                    .replace(R.id.match_fragment_container,
+                                                                            MatchQrFragment.newInstance(mBundle))
                                                                     .commitNow();
 
                                                         }
@@ -229,11 +304,16 @@ public class MatchScanFragment extends Fragment {
 
     }
 
+    /**
+     * Manage the use of the camera
+     * ----------------------------
+     */
     private void useCamera() {
 
         if (getContext() != null) {
 
-            final ListenableFuture<ProcessCameraProvider> cameraProvider = ProcessCameraProvider.getInstance(getContext());
+            final ListenableFuture<ProcessCameraProvider> cameraProvider =
+                    ProcessCameraProvider.getInstance(getContext());
 
             cameraProvider.addListener(new Runnable() {
                 @Override
